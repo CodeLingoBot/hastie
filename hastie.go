@@ -523,7 +523,7 @@ type SiteStruct struct {
 	Categories  []string
 }
 
-// WalkFn that fills SiteStruct with data.
+// Walker that fills SiteStruct with data.
 func Walker(fn string, fi os.FileInfo, err error) error {
 	if err != nil {
 		PrintErr("Walker: ", err)
